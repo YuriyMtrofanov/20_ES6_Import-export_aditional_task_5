@@ -7,10 +7,6 @@ appLaunch.run()
 
 
 
-
-
-// console.log('parse', parseTwoDigitYear(new Date()))
-
 // Логика:
 // 1. Сначала я должен собрать уже существующую информацию о всех донатах (сумма, дата)
 // 2. Эту информацию я буду хранить в объекте. Для тоздания данного объекта пропишу класс
@@ -24,39 +20,6 @@ appLaunch.run()
 // 8. Нужно еще не забыть очистить поле ввода после записи
 
 /*
-const form = document.querySelector('.donate-form')
-
-form.addEventListener('submit', (event)=> {
-    event.preventDefault()
-
-    const { target } = event   // значение "form"
-    const donateFormInput = target.amount
-    const inputValue = donateFormInput.value
-    const date = new Date()
-
-    const donatesContainerDonates = document.querySelector('.donates-container__donates')
-
-    // const donateItem = document.createElement('div')
-    // donateItem.className = 'donate-item'
-    // donateItem.textContent = `${date} - `
-
-
-    // создаю элемент от класса, который собирает информацию
-    const donateItem = new Donation("donationFromYuriy", new Date(), inputValue)
-    // Затем с помощью метода от данного класса создаю эдемент HTML
-    const donateHTML = donateItem.createElement('div', 'donate-item')
-    console.log('donateHTML', donateHTML)
-
-    const amount = document.createElement('b')
-    amount.textContent = `${inputValue}$`
-
-    donateHTML.append(amount)  // не работает т.к. я сделал donateItem объектом с информацией о донате
-    // из этого объекта требуется получить данные и создать элемент HTML, а для этого у меня есть
-    // подготовленная функция createElement()
-
-    donatesContainerDonates.append(donateItem)
-    console.log(donateItem)
-})
 
 // Фунция, которая записывает информацию о полученных донатах
 function donatesReceived(){
@@ -73,9 +36,4 @@ function donatesReceived(){
 const data = donatesReceived()
 console.log(data)
 
-class DonatesContainer extends Donation {
-    constructor(date, sum){
-        super(date, sum)
-    }
-}
 */
