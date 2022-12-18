@@ -5,6 +5,4 @@ export class DataContainer {
         this.date = date,
         this.amount = amount
     }
-
-
 }

@@ -1,13 +1,12 @@
 import { Donations } from './donations'
 
 export class App {
+    #donations
     constructor(){
-        this.donations = new Donations()
+        this.#donations = new Donations()
     }
 
     run(){
-        this.donations.getInputData()   // Получили и сохранили данные в контейнере
-
-        
+        this.#donations.getInputData()   //Получил, сохранил данные в контейнере и на их основе отрендерил новые пункты в списке 
     }
 }
